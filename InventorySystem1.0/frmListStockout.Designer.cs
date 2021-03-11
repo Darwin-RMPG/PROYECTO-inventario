@@ -83,7 +83,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmListStockout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "List de Articulos Vendidos";
+            this.Text = "Lista de Articulos Vendidos";
             this.Load += new System.EventHandler(this.frmListStockout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtglist)).EndInit();
             this.ResumeLayout(false);

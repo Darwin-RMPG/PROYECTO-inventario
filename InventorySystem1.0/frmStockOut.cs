@@ -188,7 +188,7 @@ namespace InventorySystem1._0
             config.Execute_Query("UPDATE tblautonumber SET END= END + INCREMENT WHERE ID = 5");
 
             // '------------------------------------------------------------
-            MessageBox.Show("Item(s) has been save in the database.");
+            MessageBox.Show("Los artículos se han guardado en la base de datos.");
             // '------------------------------------------------------------clearing
             funct.clearTxt(Panel1);
             dtCus_addedlist.Rows.Clear();

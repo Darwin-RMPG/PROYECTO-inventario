@@ -25,7 +25,7 @@ namespace InventorySystem1._0
         private void btnTypesave_Click(object sender, EventArgs e)
         {
             sql = "INSERT INTO tblsettings (DESCRIPTION,PARA) VALUES ('" + txtCategory.Text + "','Category')";
-            config.Execute_CUD(sql, "error to saved data", "Data has been saved in the database.");
+            config.Execute_CUD(sql, "error en los datos guardados", "Los datos se han guardado en la base de datos.");
 
 
             sql = "INSERT INTO tblautonumber (STRT,END,INCREMENT,DESCRIPTION)" +
@@ -48,7 +48,7 @@ namespace InventorySystem1._0
             config.Execute_Query(sql);
 
             sql = "DELETE FROM `tblsettings` WHERE `ID`='" + dtgtypelist.CurrentRow.Cells[0].Value + "'";
-            config.Execute_CUD(sql, "error to delete data", "Data has been deleted in the database.");
+            config.Execute_CUD(sql, "error al borrar datos", "Los datos se han eliminado de la base de datos.");
 
             btntypeLoad_Click(sender, e);
         }
@@ -70,14 +70,14 @@ namespace InventorySystem1._0
         private void btnusave_Click(object sender, EventArgs e)
         {
             sql = "INSERT INTO tblsettings (DESCRIPTION,PARA) VALUES ('" + txtunit.Text + "','Unit')";
-            config.Execute_CUD(sql, "error to save date", "Data has been saved in the database.");
+            config.Execute_CUD(sql, "error al guardar la fecha", "Los datos se han guardado en la base de datos.");
             btntypeupdate_Click(sender, e);
         }
 
         private void btnunit_Click(object sender, EventArgs e)
         {
             sql = "DELETE FROM `tblsettings` WHERE `ID`='" + dtgulist.CurrentRow.Cells[0].Value + "'";
-            config.Execute_CUD(sql, "error to delete date", "Data has been deleted in the database.");
+            config.Execute_CUD(sql, "error al borrar la fecha", "Los datos se han eliminado de la base de datos.");
             btntypeupdate_Click(sender, e);
         }
 
@@ -87,17 +87,27 @@ namespace InventorySystem1._0
             unitid = dtgulist.CurrentRow.Cells[0].Value.ToString();
         }
 
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmSettings_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnuupdate_Click(object sender, EventArgs e)
         {
             sql = "UPDATE tblsettings  SET DESCRIPTION= '" + txtCategory.Text + "' WHERE ID ='" + unitid + "'";
-            config.Execute_CUD(sql, "error to update data", "Data has been updated in the database.");
+            config.Execute_CUD(sql, "error al actualizar datos", "Los datos se han actualizado en la base de datos.");
             btntypeupdate_Click(sender, e);
         }
 
         private void btntypeupdate_Click(object sender, EventArgs e)
         {
             sql = "UPDATE tblsettings  SET DESCRIPTION= '" + txtCategory.Text + "' WHERE ID ='" + typeid + "'";
-            config.Execute_CUD(sql, "error to update data", "Data has been updated in the database.");
+            config.Execute_CUD(sql, "error al actualizar datos", "Los datos se han actualizado en la base de datos.");
             btntypeLoad_Click(sender, e);
         }
     }

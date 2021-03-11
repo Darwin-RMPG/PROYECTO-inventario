@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.label1 = new System.Windows.Forms.Label();
             this.ts_stocks = new System.Windows.Forms.ToolStripButton();
             this.ts_settings = new System.Windows.Forms.ToolStripButton();
             this.ts_StockOut = new System.Windows.Forms.ToolStripButton();
@@ -39,6 +37,8 @@
             this.ts_ManageUsers = new System.Windows.Forms.ToolStripButton();
             this.ts_Report = new System.Windows.Forms.ToolStripButton();
             this.ts_Login = new System.Windows.Forms.ToolStripButton();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
@@ -63,28 +63,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(142, 634);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(142, 612);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(846, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(643, 251);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 204);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Jess Galarraga\r\nDarwin Mena\r\nNixon Poma\r\nEdison Pullupaxi\r\nNelson Recalde\r\nElizab" +
-    "eth Unaucho";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ts_stocks
             // 
@@ -163,6 +141,28 @@
             this.ts_Login.Text = "Login";
             this.ts_Login.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ts_Login.Click += new System.EventHandler(this.ts_Login_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(142, 612);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(846, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(643, 251);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 204);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Jessica Galarraga\r\nDarwin Mena\r\nNixon Poma\r\nEdison Pullupaxi\r\nNelson Recalde\r\nEli" +
+    "zabeth Unaucho";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
             // 

@@ -52,7 +52,7 @@ namespace InventorySystem1._0
                 {
                     if (dtgCus_itemlist.CurrentRow.Cells[0].Value == r.Cells[0].Value)
                     {
-                        MessageBox.Show("El artículo ya está en el carrito", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("El producto ya está en el carrito", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         return;
                     }
                 }
@@ -71,7 +71,7 @@ namespace InventorySystem1._0
                 }
                 else
                 {
-                    MessageBox.Show("El artículo ya está en el carrito", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("El producto ya está en el carrito", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
 
@@ -158,7 +158,7 @@ namespace InventorySystem1._0
             config.Execute_Query("UPDATE tblautonumber SET END= END + INCREMENT WHERE ID = 6");
 
             // '------------------------------------------------------------
-            MessageBox.Show("Item(s) has been returned in the database.");
+            MessageBox.Show("Los artículos se han devuelto en la base de datos.");
             // '------------------------------------------------------------clearing
             funct.clearTxt(GroupBox3);
             dtCus_addedlist.Rows.Clear();

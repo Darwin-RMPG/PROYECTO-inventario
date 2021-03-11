@@ -45,7 +45,7 @@ namespace InventorySystem1._0
             }
             else
             {
-                MessageBox.Show("Account does not exist! Please contact administrator.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("¡El usuario o contraseña no existe! Comuníquese con el administrador.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

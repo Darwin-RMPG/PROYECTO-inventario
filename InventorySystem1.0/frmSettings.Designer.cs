@@ -255,6 +255,7 @@
             this.GroupBox1.TabIndex = 13;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Agregar nueva Categoria";
+            this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // frmSettings
             // 
@@ -266,7 +267,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Categoria";
+            this.Text = "Categorias";
+            this.Load += new System.EventHandler(this.frmSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgtypelist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgulist)).EndInit();
             this.GroupBox2.ResumeLayout(false);
