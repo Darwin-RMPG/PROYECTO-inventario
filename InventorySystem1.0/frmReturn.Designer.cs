@@ -36,6 +36,13 @@
             this.btnreturnadd = new System.Windows.Forms.Button();
             this.Panel7 = new System.Windows.Forms.Panel();
             this.dtCus_addedlist = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Panel6 = new System.Windows.Forms.Panel();
             this.dtgCus_itemlist = new System.Windows.Forms.DataGridView();
             this.Label26 = new System.Windows.Forms.Label();
@@ -45,13 +52,6 @@
             this.Label24 = new System.Windows.Forms.Label();
             this.txtreturn_address = new System.Windows.Forms.TextBox();
             this.txtreturn_name = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtCus_addedlist)).BeginInit();
             this.Panel6.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             this.Button1.BackColor = System.Drawing.Color.Transparent;
             this.Button1.ForeColor = System.Drawing.Color.Black;
-            this.Button1.Location = new System.Drawing.Point(609, 496);
+            this.Button1.Location = new System.Drawing.Point(562, 501);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(88, 26);
             this.Button1.TabIndex = 26;
@@ -163,6 +163,47 @@
             this.dtCus_addedlist.TabIndex = 1;
             this.dtCus_addedlist.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtCus_addedlist_CellEndEdit);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id articulo";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre Item";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 120;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Descripcion";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 120;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 80;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Cantidad";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 80;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Precio Total";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 80;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "ID venta";
+            this.Column7.Name = "Column7";
+            this.Column7.Visible = false;
+            // 
             // Panel6
             // 
             this.Panel6.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -257,47 +298,6 @@
             this.txtreturn_name.Size = new System.Drawing.Size(186, 20);
             this.txtreturn_name.TabIndex = 0;
             this.txtreturn_name.TextChanged += new System.EventHandler(this.txtreturn_name_TextChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id articulo";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre Item";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 120;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Descripcion";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 120;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Precio";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 80;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Cantidad";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 80;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Precio Total";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 80;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "ID venta";
-            this.Column7.Name = "Column7";
-            this.Column7.Visible = false;
             // 
             // frmReturn
             // 

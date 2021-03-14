@@ -51,13 +51,13 @@
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(50, 35);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ts_stocks,
+            this.ts_Login,
+            this.ts_ManageUsers,
             this.ts_settings,
+            this.ts_stocks,
             this.ts_StockOut,
             this.ts_Return,
-            this.ts_ManageUsers,
-            this.ts_Report,
-            this.ts_Login});
+            this.ts_Report});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(142, 634);
@@ -199,7 +199,7 @@
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema  de Inventario";
+            this.Text = "Sistema  de Ventas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
