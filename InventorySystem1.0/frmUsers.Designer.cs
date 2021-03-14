@@ -33,21 +33,21 @@
             this.Panel1 = new System.Windows.Forms.Panel();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.lbl_id = new System.Windows.Forms.Label();
+            this.Button1 = new System.Windows.Forms.Button();
             this.cbo_type = new System.Windows.Forms.ComboBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
+            this.btn_New = new System.Windows.Forms.Button();
             this.Label4 = new System.Windows.Forms.Label();
             this.txt_username = new System.Windows.Forms.TextBox();
             this.Label3 = new System.Windows.Forms.Label();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.dtg_listUser = new System.Windows.Forms.DataGridView();
-            this.Button1 = new System.Windows.Forms.Button();
             this.btn_saveuser = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btn_New = new System.Windows.Forms.Button();
             this.Panel1.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_listUser)).BeginInit();
@@ -94,6 +94,21 @@
             this.lbl_id.Visible = false;
             this.lbl_id.TextChanged += new System.EventHandler(this.lbl_id_TextChanged);
             // 
+            // Button1
+            // 
+            this.Button1.BackColor = System.Drawing.Color.Transparent;
+            this.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Button1.Location = new System.Drawing.Point(466, 79);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(132, 26);
+            this.Button1.TabIndex = 28;
+            this.Button1.Text = "Cerrar";
+            this.ToolTip1.SetToolTip(this.Button1, "Close");
+            this.Button1.UseVisualStyleBackColor = false;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // cbo_type
             // 
             this.cbo_type.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,11 +128,11 @@
             this.Label1.BackColor = System.Drawing.Color.White;
             this.Label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Label1.Location = new System.Drawing.Point(67, 26);
+            this.Label1.Location = new System.Drawing.Point(62, 23);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(44, 16);
+            this.Label1.Size = new System.Drawing.Size(56, 16);
             this.Label1.TabIndex = 3;
-            this.Label1.Text = "Name :";
+            this.Label1.Text = "Nombre :";
             // 
             // txt_pass
             // 
@@ -135,11 +150,26 @@
             this.Label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.Image = ((System.Drawing.Image)(resources.GetObject("Label2.Image")));
             this.Label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Label2.Location = new System.Drawing.Point(41, 56);
+            this.Label2.Location = new System.Drawing.Point(62, 56);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(67, 16);
+            this.Label2.Size = new System.Drawing.Size(56, 16);
             this.Label2.TabIndex = 4;
-            this.Label2.Text = "Username :";
+            this.Label2.Text = "Usuario :";
+            // 
+            // btn_New
+            // 
+            this.btn_New.BackColor = System.Drawing.Color.Transparent;
+            this.btn_New.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_New.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_New.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_New.Location = new System.Drawing.Point(466, 23);
+            this.btn_New.Name = "btn_New";
+            this.btn_New.Size = new System.Drawing.Size(132, 26);
+            this.btn_New.TabIndex = 24;
+            this.btn_New.Text = "Nuevo";
+            this.ToolTip1.SetToolTip(this.btn_New, "New");
+            this.btn_New.UseVisualStyleBackColor = false;
+            this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
             // Label4
             // 
@@ -148,11 +178,11 @@
             this.Label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.Image = ((System.Drawing.Image)(resources.GetObject("Label4.Image")));
             this.Label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Label4.Location = new System.Drawing.Point(67, 116);
+            this.Label4.Location = new System.Drawing.Point(71, 116);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(40, 16);
+            this.Label4.Size = new System.Drawing.Size(47, 16);
             this.Label4.TabIndex = 6;
-            this.Label4.Text = "Type :";
+            this.Label4.Text = "Cargo :";
             // 
             // txt_username
             // 
@@ -169,11 +199,11 @@
             this.Label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.Image = ((System.Drawing.Image)(resources.GetObject("Label3.Image")));
             this.Label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Label3.Location = new System.Drawing.Point(44, 86);
+            this.Label3.Location = new System.Drawing.Point(74, 86);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(66, 16);
+            this.Label3.Size = new System.Drawing.Size(44, 16);
             this.Label3.TabIndex = 5;
-            this.Label3.Text = "Password :";
+            this.Label3.Text = "Clave :";
             // 
             // GroupBox1
             // 
@@ -204,21 +234,6 @@
             this.dtg_listUser.Size = new System.Drawing.Size(656, 291);
             this.dtg_listUser.TabIndex = 0;
             this.dtg_listUser.Click += new System.EventHandler(this.dtg_listUser_Click);
-            // 
-            // Button1
-            // 
-            this.Button1.BackColor = System.Drawing.Color.Transparent;
-            this.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button1.Location = new System.Drawing.Point(457, 106);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(132, 26);
-            this.Button1.TabIndex = 28;
-            this.Button1.Text = "Cerrar";
-            this.ToolTip1.SetToolTip(this.Button1, "Close");
-            this.Button1.UseVisualStyleBackColor = false;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // btn_saveuser
             // 
@@ -264,21 +279,6 @@
             this.btn_delete.Text = "Borrar";
             this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
-            // 
-            // btn_New
-            // 
-            this.btn_New.BackColor = System.Drawing.Color.Transparent;
-            this.btn_New.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_New.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_New.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_New.Location = new System.Drawing.Point(457, 49);
-            this.btn_New.Name = "btn_New";
-            this.btn_New.Size = new System.Drawing.Size(132, 26);
-            this.btn_New.TabIndex = 24;
-            this.btn_New.Text = "Nuevo";
-            this.ToolTip1.SetToolTip(this.btn_New, "New");
-            this.btn_New.UseVisualStyleBackColor = false;
-            this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
             // frmUsers
             // 
