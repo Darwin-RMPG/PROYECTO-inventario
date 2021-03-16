@@ -65,7 +65,7 @@ namespace InventorySystem1._0
                      + "values('" + txt_name.Text + "','" + txt_username.Text
                      + "',sha1('" + txt_pass.Text + "'),'" + cbo_type.Text
                      + "')";
-                config.Execute_CUD(sql, "No se puede guardar", "Los datos se han guardado en la base de datos.");
+                config.Execute_CUD(sql, "No se puede guardar", "El Usuario se han regitrado correctamente.");
                 frmUsers_Load(sender, e);
             }
            
@@ -82,7 +82,7 @@ namespace InventorySystem1._0
                 sql = "update user set name = '" + txt_name.Text + "',user_name= '" + txt_username.Text 
                           + "',pass= sha1('" + txt_pass.Text + "'),type= '" + cbo_type.Text 
                           + "' where user_id = " + lbl_id.Text;
-                config.Execute_CUD(sql, "No se puede actualizar", "Los datos se han actualizado en la base de datos.");
+                config.Execute_CUD(sql, "No se puede actualizar", "La Informaciòn se han actualizado correctamente.");
                 frmUsers_Load(sender, e);
             } 
         }
@@ -90,7 +90,7 @@ namespace InventorySystem1._0
         private void btn_delete_Click(object sender, EventArgs e)
         {
             sql = "delete from user where user_id = '" + lbl_id.Text + "'";
-            config.Execute_CUD(sql, "Incapaz de borrar", "Los datos se han eliminado de la base de datos.");
+            config.Execute_CUD(sql, "Incapaz de borrar", "El ususario se ha eliminado del Sitema.");
             frmUsers_Load(sender, e);
         }
 

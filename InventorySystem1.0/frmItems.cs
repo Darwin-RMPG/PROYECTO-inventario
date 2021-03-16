@@ -131,14 +131,14 @@ namespace InventorySystem1._0
         {
             sql = "UPDATE tblitems SET `NAME`='" + txtname.Text + "', `DESCRIPTION`='" + txtdescription.Text + "', `TYPE`='" + cbotype.Text + "', `PRICE`='" + txtprice.Text + "'" +
             ",`UNIT`='" + cbounit.Text + "' WHERE ITEMID='" + txtitemid.Text + "'";
-            config.Execute_CUD(sql, "ERROR AL ACTUALIZAR", "Los datos se han actualizado en la base de datos"); 
+            config.Execute_CUD(sql, "ERROR AL ACTUALIZAR", "La informacion del producto se ha actualizado."); 
             btnnew_Click(sender, e);
         }
 
         private void btndelete_Click(object sender, EventArgs e)
         {
             sql = "DELETE FROM tblitems WHERE ITEMID='" + dtglist.CurrentRow.Cells[0].Value + "'";
-            config.Execute_CUD(sql, "ERROR AL BORRAR", "Se han eliminado los datos.");
+            config.Execute_CUD(sql, "ERROR AL BORRAR", "Se han eliminado el producto.");
             btnnew_Click(sender, e);
         }
 

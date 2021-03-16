@@ -25,7 +25,7 @@ namespace InventorySystem1._0
         private void btnTypesave_Click(object sender, EventArgs e)
         {
             sql = "INSERT INTO tblsettings (DESCRIPTION,PARA) VALUES ('" + txtCategory.Text + "','Category')";
-            config.Execute_CUD(sql, "error en los datos guardados", "Los datos se han guardado en la base de datos.");
+            config.Execute_CUD(sql, "error en los datos guardados", "La nueva Categorìa se han guardado.");
 
 
             sql = "INSERT INTO tblautonumber (STRT,END,INCREMENT,DESCRIPTION)" +
@@ -48,7 +48,7 @@ namespace InventorySystem1._0
             config.Execute_Query(sql);
 
             sql = "DELETE FROM `tblsettings` WHERE `ID`='" + dtgtypelist.CurrentRow.Cells[0].Value + "'";
-            config.Execute_CUD(sql, "error al borrar datos", "Los datos se han eliminado de la base de datos.");
+            config.Execute_CUD(sql, "error al borrar datos", "La Categoria se han eliminado.");
 
             btntypeLoad_Click(sender, e);
         }
@@ -107,7 +107,7 @@ namespace InventorySystem1._0
         private void btntypeupdate_Click(object sender, EventArgs e)
         {
             sql = "UPDATE tblsettings  SET DESCRIPTION= '" + txtCategory.Text + "' WHERE ID ='" + typeid + "'";
-            config.Execute_CUD(sql, "error al actualizar datos", "Los datos se han actualizado en la base de datos.");
+            config.Execute_CUD(sql, "error al actualizar datos", "La informaciòn se han actualizado correctamente.");
             btntypeLoad_Click(sender, e);
         }
     }

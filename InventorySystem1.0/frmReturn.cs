@@ -158,7 +158,7 @@ namespace InventorySystem1._0
             config.Execute_Query("UPDATE tblautonumber SET END= END + INCREMENT WHERE ID = 6");
 
             // '------------------------------------------------------------
-            MessageBox.Show("Los artículos se han devuelto en la base de datos.");
+            MessageBox.Show("Los productos han sido devueltos, la facturacion se ha cancelado.");
             // '------------------------------------------------------------clearing
             funct.clearTxt(GroupBox3);
             dtCus_addedlist.Rows.Clear();
